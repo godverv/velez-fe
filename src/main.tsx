@@ -2,9 +2,11 @@
 import { createRoot } from 'react-dom/client'
 import {RouterProvider} from "react-router-dom";
 
+import '@/index.module.css'
 import '@gravity-ui/uikit/styles/fonts.css';
 import '@gravity-ui/uikit/styles/styles.css';
-import '@/index.module.css'
+import 'react-tooltip/dist/react-tooltip.css'
+
 import {ThemeProvider} from '@gravity-ui/uikit';
 
 import router from "@/app/router/Router";

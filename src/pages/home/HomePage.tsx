@@ -8,17 +8,6 @@ export default function HomePage() {
 
     return (
         <div className={styles.Home}>
-            <div className={styles.HomeHeader}>
-                <div className={styles.Tab}>
-                    Home
-                </div>
-                <div className={styles.Tab}>
-                    <div className={styles.TabName}>Matreshka</div>
-                    <div className={styles.CloseButton}>
-                    <span className="material-symbols-outlined" children={"close"}/>
-                    </div>
-                </div>
-            </div>
             <div className={styles.OpenedWidget}>
                 {openedWidget}
             </div>

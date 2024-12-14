@@ -9,11 +9,13 @@ export default function ControlPageWidget() {
     const components = [
         {
             tittle: 'Matreshka',
-            icon: <MatreshkaIcon/>
+            icon: <MatreshkaIcon/>,
+            externalLink: ""
         },
         {
             tittle: 'Velez',
-            icon: <VelezIcon/>
+            icon: <VelezIcon/>,
+            externalLink: ""
         },
     ]
 
@@ -23,10 +25,7 @@ export default function ControlPageWidget() {
                 components
                     .map((v) =>
                         <div className={styles.ServiceCard}>
-                            <Card
-                                tittle={v.tittle}
-                                icon={v.icon}
-                            />
+                            <Card {...v}/>
                         </div>)
             }
         </div>

@@ -1,10 +1,12 @@
 import React from "react";
 
 import styles from './card.module.css'
+import {Tooltip} from "react-tooltip";
 
 export type CardProps = {
     tittle: string
     icon: React.JSX.Element
+    externalLink: string
 }
 
 export default function Card(props: CardProps) {
@@ -17,12 +19,27 @@ export default function Card(props: CardProps) {
                 <div className={styles.Tittle}>
                     {props.tittle}
                 </div>
+
+                <div
+                    className={styles.ExternalLink}
+                    data-tooltip-id={"open-external-service-link-"+props.tittle}
+                    data-tooltip-content="Open in new window"
+                    data-tooltip-place="left"
+                >
+                        <span
+                            className="material-symbols-outlined"
+                            children={"open_in_new"}/>
+                </div>
             </div>
             <div className={styles.CardBottom}>
                 <div className={styles.Content}>
                     {'Surely hills examines comparison mirror beings pork, surname race vegas south carry fabrics athletic, basename workshop payment parent identifier feed arguments, milton. '}
                 </div>
             </div>
+
+            <Tooltip
+                id={"open-external-service-link-"+props.tittle}
+            />
         </div>
     )
 }
