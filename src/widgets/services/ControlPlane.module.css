@@ -3,7 +3,7 @@
     flex-wrap: wrap;
 
     gap: 2em;
-    justify-content: space-around;
+    justify-content: stretch;
     padding: 1em;
 }
 
