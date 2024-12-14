@@ -63,4 +63,5 @@
     width: 4em;
     height: 4em;
     transform: translateY(50%);
+    background: var(--main-bg-color);
 }

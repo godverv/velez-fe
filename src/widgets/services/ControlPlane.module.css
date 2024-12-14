@@ -1,9 +1,9 @@
-.ControlPlane{
+.ControlPlane {
     display: flex;
     flex-wrap: wrap;
 
     gap: 2em;
-    justify-content: stretch;
+    justify-content: space-around;
     padding: 1em;
 }
 
@@ -25,3 +25,4 @@
     transform: scale(1.05);
     cursor: pointer;
 }
+
